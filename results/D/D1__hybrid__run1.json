@@ -1,0 +1,72 @@
+{
+ "problem": "D1",
+ "pipeline": "hybrid",
+ "run": 1,
+ "model": "qwen2.5:3b",
+ "timestamp": "2026-10-29T00:36:28",
+ "answer": {
+  "status": "unique",
+  "solution": {
+   "Alla": "knave",
+   "Bohdan": "knight",
+   "Vitalii": "knave",
+   "Hanna": "knave",
+   "Dariia": "knave"
+  },
+  "objective": null
+ },
+ "trace": {
+  "attempts": [
+   {
+    "ir": {
+     "variables": {
+      "Alla": [
+       0,
+       1
+      ],
+      "Bohdan": [
+       0,
+       1
+      ],
+      "Vitalii": [
+       0,
+       1
+      ],
+      "Hanna": [
+       0,
+       1
+      ],
+      "Dariia": [
+       0,
+       1
+      ]
+     },
+     "all_different": [],
+     "constraints": [
+      "Alla == ((Bohdan == 1) and (Vitalii == 1))",
+      "Bohdan == (Hanna == 0)",
+      "Vitalii == ((Alla == 1) or (Dariia == 1))",
+      "Hanna == ((Alla + Bohdan + Vitalii + Hanna + Dariia) == 2)",
+      "Dariia == (Vitalii != Dariia)"
+     ]
+    },
+    "errors": []
+   }
+  ],
+  "solver": {
+   "status": "unique",
+   "n_solutions": 1,
+   "objective": null,
+   "first_solution": {
+    "Alla": 0,
+    "Bohdan": 1,
+    "Vitalii": 0,
+    "Hanna": 0,
+    "Dariia": 0
+   }
+  }
+ },
+ "error": null,
+ "seconds": 81.0,
+ "llm_calls": 1
+}

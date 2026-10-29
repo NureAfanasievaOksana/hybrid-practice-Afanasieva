@@ -1,0 +1,88 @@
+{
+ "problem": "D5",
+ "pipeline": "hybrid",
+ "run": 2,
+ "model": "qwen2.5:3b",
+ "timestamp": "2026-10-29T00:54:48",
+ "answer": {
+  "status": "unique",
+  "solution": {
+   "Yaryna": 5,
+   "Zakhar": 3,
+   "Ilko": 4,
+   "Kyrylo": 6,
+   "Lada": 2,
+   "Marko": 1
+  },
+  "objective": null
+ },
+ "trace": {
+  "attempts": [
+   {
+    "ir": {
+     "variables": {
+      "Yaryna": [
+       1,
+       6
+      ],
+      "Zakhar": [
+       1,
+       6
+      ],
+      "Ilko": [
+       1,
+       6
+      ],
+      "Kyrylo": [
+       1,
+       6
+      ],
+      "Lada": [
+       1,
+       6
+      ],
+      "Marko": [
+       1,
+       6
+      ]
+     },
+     "all_different": [
+      [
+       "Yaryna",
+       "Zakhar",
+       "Ilko",
+       "Kyrylo",
+       "Lada",
+       "Marko"
+      ]
+     ],
+     "constraints": [
+      "Kyrylo == 6",
+      "abs(Yaryna - Zakhar) - 1 == 1",
+      "abs(Ilko - Marko) - 1 == 2",
+      "Zakhar < Yaryna",
+      "Marko < Ilko",
+      "Lada == 2"
+     ]
+    },
+    "errors": []
+   }
+  ],
+  "solver": {
+   "status": "unique",
+   "n_solutions": 1,
+   "objective": null,
+   "first_solution": {
+    "Yaryna": 5,
+    "Zakhar": 3,
+    "Ilko": 4,
+    "Kyrylo": 6,
+    "Lada": 2,
+    "Marko": 1
+   }
+  }
+ },
+ "error": null,
+ "seconds": 19.5,
+ "llm_calls": 1
+}

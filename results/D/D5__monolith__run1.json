@@ -1,0 +1,25 @@
+{
+ "problem": "D5",
+ "pipeline": "monolith",
+ "run": 1,
+ "model": "qwen2.5:3b",
+ "timestamp": "2026-10-29T00:53:22",
+ "answer": {
+  "status": "unique",
+  "solution": {
+   "Yaryna": 1,
+   "Zakhar": 3,
+   "Ilko": 4,
+   "Kyrylo": 6,
+   "Lada": 2,
+   "Marko": 5
+  },
+  "objective": 1
+ },
+ "trace": {
+  "reasoning": "Given the conditions, let's deduce the order of the students step by step. First, Kyrylo stands at the right end (position 6). Lada stands second from the left (position 2). Since exactly one person stands between Yaryna and Zakhar, and Zakhar is to the left of Yaryna, we can place Yaryna and Zakhar in positions 1 and 3. Given that Marko is to the left of Ilko, and there are exactly two people between Ilko and Marko, we can place Ilko and Marko in positions 4 and 5. This leaves Kyrylo in position 6, and Lada in position 2. The only remaining positions are 1 and 3, which must be for Yaryna and Zakhar. Since Yaryna is to the left of Zakhar, Yaryna must be in position 1 and Zakhar in position 3. This satisfies all conditions. The solution is: Yaryna (1), Zakhar (3), Ilko (4), Kyrylo (6), Lada (2), Marko (5)."
+ },
+ "error": null,
+ "seconds": 32.1,
+ "llm_calls": 1
+}

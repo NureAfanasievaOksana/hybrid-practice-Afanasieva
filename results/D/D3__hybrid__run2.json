@@ -1,0 +1,189 @@
+{
+ "problem": "D3",
+ "pipeline": "hybrid",
+ "run": 2,
+ "model": "qwen2.5:3b",
+ "timestamp": "2026-10-29T00:50:55",
+ "answer": {
+  "status": "none",
+  "solution": {},
+  "objective": null
+ },
+ "trace": {
+  "attempts": [
+   {
+    "ir": {
+     "variables": {
+      "Halyna": [
+       1,
+       5
+      ],
+      "Ihor": [
+       1,
+       5
+      ],
+      "Lesia": [
+       1,
+       5
+      ],
+      "Maksym": [
+       1,
+       5
+      ],
+      "Nina": [
+       1,
+       5
+      ],
+      "robotics": [
+       1,
+       5
+      ],
+      "vision": [
+       1,
+       5
+      ],
+      "NLP": [
+       1,
+       5
+      ],
+      "graphs": [
+       1,
+       5
+      ],
+      "security": [
+       1,
+       5
+      ],
+      "cat": [
+       1,
+       5
+      ],
+      "dog": [
+       1,
+       5
+      ],
+      "parrot": [
+       1,
+       5
+      ],
+      "fish": [
+       1,
+       5
+      ],
+      "hamster": [
+       1,
+       5
+      ],
+      "chess": [
+       1,
+       5
+      ],
+      "climbing": [
+       1,
+       5
+      ],
+      "guitar": [
+       1,
+       5
+      ],
+      "running": [
+       1,
+       5
+      ],
+      "painting": [
+       1,
+       5
+      ],
+      "red": [
+       1,
+       5
+      ],
+      "blue": [
+       1,
+       5
+      ],
+      "white": [
+       1,
+       5
+      ],
+      "black": [
+       1,
+       5
+      ],
+      "green": [
+       1,
+       5
+      ]
+     },
+     "all_different": [
+      [
+       "Halyna",
+       "Ihor",
+       "Lesia",
+       "Maksym",
+       "Nina"
+      ],
+      [
+       "robotics",
+       "vision",
+       "NLP",
+       "graphs",
+       "security"
+      ],
+      [
+       "cat",
+       "dog",
+       "parrot",
+       "fish",
+       "hamster"
+      ],
+      [
+       "chess",
+       "climbing",
+       "guitar",
+       "running",
+       "painting"
+      ],
+      [
+       "red",
+       "blue",
+       "white",
+       "black",
+       "green"
+      ]
+     ],
+     "constraints": [
+      "robotics == cat",
+      "abs(blue - chess) == 1",
+      "abs(blue - black) == 1",
+      "abs(blue - running) == 1",
+      "Maksym != parrot",
+      "running == 5",
+      "security < graphs",
+      "blue == guitar",
+      "green == 2",
+      "vision != parrot",
+      "Maksym != black",
+      "hamster == 5",
+      "abs(Maksym - hamster) == 1",
+      "Ihor == running - 1",
+      "abs(red - hamster) == 1",
+      "abs(black - hamster) == 1",
+      "vision == cat",
+      "green == graphs"
+     ]
+    },
+    "errors": []
+   }
+  ],
+  "solver": {
+   "status": "none",
+   "n_solutions": 0,
+   "objective": null,
+   "first_solution": null
+  }
+ },
+ "error": null,
+ "seconds": 60.0,
+ "llm_calls": 1
+}

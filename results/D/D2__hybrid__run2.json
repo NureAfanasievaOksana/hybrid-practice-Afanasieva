@@ -1,0 +1,145 @@
+{
+ "problem": "D2",
+ "pipeline": "hybrid",
+ "run": 2,
+ "model": "qwen2.5:3b",
+ "timestamp": "2026-10-29T00:43:11",
+ "answer": {
+  "status": "multiple",
+  "solution": {
+   "1": {
+    "Name": "Yurii",
+    "Pet": "cat",
+    "Door": "green"
+   },
+   "2": {
+    "Name": "Ivan",
+    "Pet": "dog",
+    "Door": "blue"
+   },
+   "3": {
+    "Name": "Zlata",
+    "Pet": "rabbit",
+    "Door": "yellow"
+   },
+   "4": {
+    "Name": "Kateryna",
+    "Pet": "turtle",
+    "Door": "red"
+   }
+  },
+  "objective": null
+ },
+ "trace": {
+  "attempts": [
+   {
+    "ir": {
+     "variables": {
+      "Yurii": [
+       1,
+       4
+      ],
+      "Zlata": [
+       1,
+       4
+      ],
+      "Ivan": [
+       1,
+       4
+      ],
+      "Kateryna": [
+       1,
+       4
+      ],
+      "cat": [
+       1,
+       4
+      ],
+      "dog": [
+       1,
+       4
+      ],
+      "rabbit": [
+       1,
+       4
+      ],
+      "turtle": [
+       1,
+       4
+      ],
+      "yellow": [
+       1,
+       4
+      ],
+      "blue": [
+       1,
+       4
+      ],
+      "red": [
+       1,
+       4
+      ],
+      "green": [
+       1,
+       4
+      ]
+     },
+     "all_different": [
+      [
+       "Yurii",
+       "Zlata",
+       "Ivan",
+       "Kateryna"
+      ],
+      [
+       "cat",
+       "dog",
+       "rabbit",
+       "turtle"
+      ],
+      [
+       "yellow",
+       "blue",
+       "red",
+       "green"
+      ]
+     ],
+     "constraints": [
+      "Ivan == 2",
+      "abs(Ivan - Zlata) == 1",
+      "turtle == red",
+      "Yurii < yellow",
+      "Ivan != rabbit",
+      "blue != cat",
+      "cat != blue",
+      "turtle == 4",
+      "abs(Zlata - blue) == 1"
+     ]
+    },
+    "errors": []
+   }
+  ],
+  "solver": {
+   "status": "multiple",
+   "n_solutions": 2,
+   "objective": null,
+   "first_solution": {
+    "Yurii": 1,
+    "Zlata": 3,
+    "Ivan": 2,
+    "Kateryna": 4,
+    "cat": 1,
+    "dog": 2,
+    "rabbit": 3,
+    "turtle": 4,
+    "yellow": 3,
+    "blue": 2,
+    "red": 4,
+    "green": 1
+   }
+  }
+ },
+ "error": null,
+ "seconds": 29.3,
+ "llm_calls": 1
+}

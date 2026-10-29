@@ -1,0 +1,24 @@
+{
+ "problem": "D1",
+ "pipeline": "monolith",
+ "run": 2,
+ "model": "qwen2.5:3b",
+ "timestamp": "2026-10-29T00:36:14",
+ "answer": {
+  "status": "multiple",
+  "solution": {
+   "Alla": "knave",
+   "Bohdan": "knight",
+   "Vitalii": "knight",
+   "Hanna": "knight",
+   "Dariia": "knight"
+  },
+  "objective": null
+ },
+ "trace": {
+  "reasoning": "Let's analyze the statements one by one and see if we can determine the truthfulness of each person. We'll start with the statements and see what we can deduce about their truthfulness. We'll use the following abbreviations: K for knight and L for knave. Let's start with the statements and see if we can find a consistent solution."
+ },
+ "error": null,
+ "seconds": 14.3,
+ "llm_calls": 1
+}
